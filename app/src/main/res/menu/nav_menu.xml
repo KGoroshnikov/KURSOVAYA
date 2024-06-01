@@ -1,0 +1,19 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Домой" />
+        <item
+            android:id="@+id/nav_instruction"
+            android:title="Инструкция пользователю" />
+        <item
+            android:id="@+id/nav_author"
+            android:title="Об авторе" />
+        <item
+            android:id="@+id/nav_programm"
+            android:title="О программе" />
+        <item
+            android:id="@+id/nav_exit"
+            android:title="Выйти" />
+    </group>
+</menu>

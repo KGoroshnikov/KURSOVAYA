@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:clickable="true"
+    android:id="@+id/relativeLayout"
+    android:background="@drawable/card_background"
+    android:padding="16dp"
+    android:focusable="true">
+    <ImageView
+        android:id="@+id/image_product"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background" />
+    <TextView
+        android:id="@+id/text_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image_product"
+        android:layout_marginTop="8dp"
+        android:text="Название товара"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/text_product_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_product_name"
+        android:layout_marginTop="4dp"
+        android:text="Цена: $10"
+        android:textColor="#000000"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/button_add_to_cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_product_price"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#503C3C"
+        android:text="В корзину"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="100dp" />
+</RelativeLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_background"
+    android:orientation="horizontal"
+    android:padding="16dp"
+    android:layout_margin="10dp"
+    android:scrollbarSize="20sp">
+
+    <!-- Название товара и цена -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text_cart_product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/text_cart_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <!-- Кнопки для увеличения и уменьшения количества товара -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_decrease_quantity"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#503C3C"
+            android:text="-"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="100dp" />
+
+        <TextView
+            android:id="@+id/text_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_increase_quantity"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#503C3C"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            app:cornerRadius="100dp" />
+    </LinearLayout>
+
+</LinearLayout>
